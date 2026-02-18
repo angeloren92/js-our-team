@@ -39,6 +39,7 @@ const teamMembers = [
 
 //Prendere il nodo della row
 const rowEl = document.querySelector('main section .row');
+
 //funzione che mi estrapoli il getMarkup da inserire
 //richiamare funzione per estrapolare getMarkup
 const markupHTML = getMarkup(teamMembers);

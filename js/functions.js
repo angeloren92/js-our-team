@@ -1,4 +1,8 @@
-//funzione che mi estrapoli il getmarkup da inserire
+/**
+ * ## Crea il markup HTML della pagina dato un array di oggetti
+ * @param {Array} arr - array di oggetti
+ * @returns restituisce il markup in una stringa
+ */
 function getMarkup(arr) {
     let markup = '';
     for (let i = 0; i < arr.length; i++) {
@@ -21,7 +25,12 @@ function getMarkup(arr) {
     return markup
 }
 
-//funzione per inserire addmarkup
+/**
+ * ## Aggiungere markup in un determinato nodo
+ * @param {string} string - la stringa contente il markup
+ * @param {node} node - la variabile contenente il nodo
+ * @return non restituisce nulla
+ */
 function addMarkup(string, node) {
     node.innerHTML = string;
     console.log(node, string)
