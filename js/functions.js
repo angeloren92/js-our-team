@@ -35,3 +35,16 @@ function addMarkup(string, node) {
     node.innerHTML = string;
 }
 
+/**
+ * ## Recupera i valori degli input in un oggetto
+ * @returns restituisce un oggetto con i campi degli input
+ */
+function getInputValues() {
+    const inputValueObj = {
+        name: document.getElementById('fullName').value,
+        role: document.getElementById('role').value,
+        email: document.getElementById('mail').value,
+        img: document.getElementById('img').value
+    }
+    return inputValueObj;
+}

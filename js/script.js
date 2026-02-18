@@ -52,3 +52,13 @@ addMarkup(markupHTML, rowEl);
 //evento al click
 //salvare valori input
 //pushare valori input dentro l'array iniziale
+
+const btnEl = document.querySelector('button')
+
+btnEl.addEventListener('click', function(e) {
+  e.preventDefault();
+
+  const input = getInputValues();
+  console.log(input)
+
+})
