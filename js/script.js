@@ -39,25 +39,10 @@ const teamMembers = [
 
 //Prendere il nodo della row
 const rowEl = document.querySelector('main section .row');
-console.log(rowEl);
-//funzione che mi estrapoli il getmarkup da inserire
+//funzione che mi estrapoli il getMarkup da inserire
+//richiamare funzione per estrapolare getMarkup
 const markupHTML = getMarkup(teamMembers);
-//richiamare funzione per estrapolare getmarkup
-console.log(markupHTML)
-//funzione per inserire addmarkup
-//richiamare funzione addmarkup
 
-/*
-  <div class="col" >
-    <div class="card bg-dark rounded-0 border-0 text-white">
-      <div class="row">
-        <img src="./img/female1.png" alt="" class="col-4 img-fluid">
-          <div class="col-8">
-            <h2>prova</h2>
-            <p>ciao</p>
-            <a href="#">ciao@ciao.it</a>
-          </div>
-      </div>
-    </div>
-  </div>
-*/
+//funzione per inserire addMarkup
+//richiamare funzione addMarkup
+addMarkup(markupHTML, rowEl);

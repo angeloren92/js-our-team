@@ -1,8 +1,8 @@
 //funzione che mi estrapoli il getmarkup da inserire
 function getMarkup(arr) {
-    const {name, role, email, img} = arr;
     let markup = '';
     for (let i = 0; i < arr.length; i++) {
+        const {name, role, email, img} = arr[i];
         markup += `
         <div class="col" >
             <div class="card bg-dark rounded-0 border-0 text-white">
@@ -19,4 +19,10 @@ function getMarkup(arr) {
         `
     }
     return markup
+}
+
+//funzione per inserire addmarkup
+function addMarkup(string, node) {
+    node.innerHTML = string;
+    console.log(node, string)
 }
