@@ -38,7 +38,7 @@ const teamMembers = [
 ];
 
 //Prendere il nodo della row
-const rowEl = document.querySelector('main section .row');
+const rowEl = document.getElementById('employees-cards');
 
 //funzione che mi estrapoli il getMarkup da inserire
 //richiamare funzione per estrapolare getMarkup
@@ -47,3 +47,8 @@ const markupHTML = getMarkup(teamMembers);
 //funzione per inserire addMarkup
 //richiamare funzione addMarkup
 addMarkup(markupHTML, rowEl);
+
+//aggangiare nodi degli input
+//evento al click
+//salvare valori input
+//pushare valori input dentro l'array iniziale

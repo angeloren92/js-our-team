@@ -8,7 +8,7 @@ function getMarkup(arr) {
     for (let i = 0; i < arr.length; i++) {
         const {name, role, email, img} = arr[i];
         markup += `
-        <div class="col-md-6 col-xl-4 gy-3" >
+        <div class="col-md-6 col-xl-4 gy-3">
             <div class="card bg-black rounded-0 border-0 text-white">
                 <div class="row">
                     <img src="./${img}" alt="" class="col-sm-6 col-md-4 img-fluid">
@@ -33,5 +33,5 @@ function getMarkup(arr) {
  */
 function addMarkup(string, node) {
     node.innerHTML = string;
-    console.log(node, string)
 }
+
