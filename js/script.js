@@ -37,11 +37,13 @@ const teamMembers = [
   }
 ];
 
-console.log('test')
-
 //Prendere il nodo della row
+const rowEl = document.querySelector('main section .row');
+console.log(rowEl);
 //funzione che mi estrapoli il getmarkup da inserire
+const markupHTML = getMarkup(teamMembers);
 //richiamare funzione per estrapolare getmarkup
+console.log(markupHTML)
 //funzione per inserire addmarkup
 //richiamare funzione addmarkup
 
