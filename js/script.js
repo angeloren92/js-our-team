@@ -38,3 +38,18 @@ const teamMembers = [
 ];
 
 console.log('test')
+
+/*
+  <div class="col" >
+    <div class="card bg-dark rounded-0 border-0 text-white">
+      <div class="row">
+        <img src="./img/female1.png" alt="" class="col-4 img-fluid">
+          <div class="col-8">
+            <h2>prova</h2>
+            <p>ciao</p>
+            <a href="#">ciao@ciao.it</a>
+          </div>
+      </div>
+    </div>
+  </div>
+*/
