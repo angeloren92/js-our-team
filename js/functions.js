@@ -22,7 +22,7 @@ function getMarkup(arr) {
         </div>
         `
     }
-    return markup
+    return markup;
 }
 
 /**

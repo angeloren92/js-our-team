@@ -42,7 +42,7 @@ const rowEl = document.getElementById('employees-cards');
 
 //funzione che mi estrapoli il getMarkup da inserire
 //richiamare funzione per estrapolare getMarkup
-const markupHTML = getMarkup(teamMembers);
+let markupHTML = getMarkup(teamMembers);
 
 //funzione per inserire addMarkup
 //richiamare funzione addMarkup
@@ -53,12 +53,12 @@ addMarkup(markupHTML, rowEl);
 //salvare valori input
 //pushare valori input dentro l'array iniziale
 
-const btnEl = document.querySelector('button')
+const btnEl = document.getElementById('submit')
 
 btnEl.addEventListener('click', function(e) {
   e.preventDefault();
-
-  const input = getInputValues();
-  console.log(input)
-
+  const newInput = getInputValues();
+  teamMembers.unshift(newInput);
+  markupHTML = getMarkup(teamMembers);
+  addMarkup(markupHTML, rowEl);
 })
