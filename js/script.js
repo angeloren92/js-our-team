@@ -39,6 +39,12 @@ const teamMembers = [
 
 console.log('test')
 
+//Prendere il nodo della row
+//funzione che mi estrapoli il getmarkup da inserire
+//richiamare funzione per estrapolare getmarkup
+//funzione per inserire addmarkup
+//richiamare funzione addmarkup
+
 /*
   <div class="col" >
     <div class="card bg-dark rounded-0 border-0 text-white">
